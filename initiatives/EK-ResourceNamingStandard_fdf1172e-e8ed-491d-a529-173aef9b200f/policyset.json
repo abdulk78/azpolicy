@@ -1,0 +1,55 @@
+{
+ "properties": {
+  "displayName": "EK-ResourceNamingStandard",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "ResourceNamingStandard",
+   "createdBy": "3d7e701a-112c-4ebb-b4e9-bc529e860516",
+   "createdOn": "2020-06-23T22:57:36.9989379Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "12320698373664841942",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "businessUnit"
+     },
+     "tagValue": {
+      "value": "serviceOwner"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "11453273112093373349",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "serviceName"
+     },
+     "tagValue": {
+      "value": "costCode"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14953314173355607407",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "environment"
+     },
+     "tagValue": {
+      "value": "snowTicketID"
+     }
+    }
+   }
+  ]
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-EK/providers/Microsoft.Authorization/policySetDefinitions/fdf1172e-e8ed-491d-a529-173aef9b200f",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "fdf1172e-e8ed-491d-a529-173aef9b200f"
+}

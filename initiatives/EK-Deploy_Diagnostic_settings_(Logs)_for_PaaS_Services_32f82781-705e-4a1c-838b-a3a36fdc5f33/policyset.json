@@ -1,0 +1,50 @@
+{
+ "properties": {
+  "displayName": "EK-Deploy Diagnostic settings (Logs) for PaaS Services",
+  "policyType": "Custom",
+  "description": "To configure diagnostic settings for PaaS services as per Cybersecurity requirements",
+  "metadata": {
+   "category": "Monitoring",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/124b4e8b-8d4c-46e6-9cc1-3066383a7196/resourcegroups/csoc_prod_dmz_rg"
+   },
+   "createdBy": "06e20bf9-ac25-414c-bb9b-957eeeb08f56",
+   "createdOn": "2020-04-01T07:14:14.1798575Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "809163450021663621",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bef3f64c-5290-43b7-85b0-9b254eef4c47",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/124b4e8b-8d4c-46e6-9cc1-3066383a7196/resourcegroups/csoc_prod_dmz_rg/providers/microsoft.operationalinsights/workspaces/ek-group-csoc"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "6554047342807738172",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f6e93e8-6b31-41b1-83f6-36e449a42579",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/124b4e8b-8d4c-46e6-9cc1-3066383a7196/resourcegroups/csoc_prod_dmz_rg/providers/microsoft.operationalinsights/workspaces/ek-group-csoc"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "7186224526528558673",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b889a06c-ec72-4b03-910a-cb169ee18721",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/124b4e8b-8d4c-46e6-9cc1-3066383a7196/resourcegroups/csoc_prod_dmz_rg/providers/microsoft.operationalinsights/workspaces/ek-group-csoc"
+     }
+    }
+   }
+  ]
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-EK/providers/Microsoft.Authorization/policySetDefinitions/32f82781-705e-4a1c-838b-a3a36fdc5f33",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "32f82781-705e-4a1c-838b-a3a36fdc5f33"
+}
